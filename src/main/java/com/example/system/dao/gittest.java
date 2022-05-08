@@ -13,7 +13,6 @@ public class gittest {
         System.out.println("my name is wenyuxuan!");
         System.out.println("my name is xucaihong!");
         System.out.println("my name is xunengjun!");
-         System.out.println("my name is Wei Yuxuan!");
-        System.out.println("first");
+        System.out.println("my name is wuyuanjie!");
     }
 }
