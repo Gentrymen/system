@@ -10,5 +10,6 @@ public class gittest {
         System.out.println("second");
         System.out.println("my name is yangdengchun!");
         System.out.println("my name is yangdengchun!");
+        System.out.println("my name is wenyuxuan!");
     }
 }
