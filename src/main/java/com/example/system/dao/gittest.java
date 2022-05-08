@@ -12,5 +12,6 @@ public class gittest {
         System.out.println("my name is yangdengchun!");
         System.out.println("my name is wenyuxuan!");
         System.out.println("my name is xucaihong!");
+        System.out.println("my name is xunengjun!");
     }
 }
