@@ -8,5 +8,6 @@ public class gittest {
     public static void main(String[] args) {
         System.out.println("hello git! my name is yang dengchun");
         System.out.println("second");
+        System.out.println("my name is yangdengchun!");
     }
 }
