@@ -59,6 +59,11 @@ export const mixin = {
                     type: 'error'
                 });
             }
+        },
+        //弹出删除窗口
+        handleDelete(id){
+            this.idx = id;
+            this.delVisible = true;
         }
     }
 }
