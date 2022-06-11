@@ -11,21 +11,22 @@ export const mixin = {
         getUrl(url){
             return `${this.$store.state.HOST}/${url}`
         },
-		changeSex(value){
-		    if(value == 0){
-		        return '女';
-		    }
-		    if(value == 1){
-		        return '男';
-		    }
-		    if(value == 2){
-		        return '组合';
-		    }
-		    if(value == 3){
-		        return '不明';
-		    }
-		    return value;
-		},
+        //获取性别中文
+        changeSex(value){
+            if(value == 0){
+                return '女';
+            }
+            if(value == 1){
+                return '男';
+            }
+            if(value == 2){
+                return '组合';
+            }
+            if(value == 3){
+                return '不明';
+            }
+            return value;
+        },
         //获取生日
         attachBirth(val){
             return String(val).substr(0,10);
@@ -64,6 +65,18 @@ export const mixin = {
         handleDelete(id){
             this.idx = id;
             this.delVisible = true;
+        },
+        //把已经选择的项赋值给multipleSelection
+        handleSelectionChange(val){
+            this.multipleSelection = val;
+        },
+        //批量删除已经选择的项
+        delAll(){
+            for(let item of this.multipleSelection){
+                this.handleDelete(item.id);
+                this.deleteRow();
+            }
+            this.multipleSelection = [];
         }
     }
 }
