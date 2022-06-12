@@ -17,3 +17,7 @@ export const delSinger = (id) => get(`singer/delete?id=${id}`);
 //============歌曲相关================
 //根据歌手id查询歌曲
 export const songOfSingerId =(id) => get(`song/singer/detail?singerId=${id}`);
+//编辑歌曲
+export const updateSong = (params) => post(`song/update`,params);
+//删除歌曲
+export const delSong = (id) => get(`song/delete?id=${id}`);
