@@ -13,3 +13,7 @@ export const setSinger = (params) => post(`singer/add`,params);
 export const updateSinger = (params) => post(`singer/update`,params);
 //删除歌手
 export const delSinger = (id) => get(`singer/delete?id=${id}`);
+
+//============歌曲相关================
+//根据歌手id查询歌曲
+export const songOfSingerId =(id) => get(`song/singer/detail?singerId=${id}`);
